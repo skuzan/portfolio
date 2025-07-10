@@ -21,25 +21,25 @@
     <main>
       <!--Contact Section-->
       <h2>İletişim Formu</h2>
-      <form action="/result.html" method="get">
+      <form action="/result.html" method="get" autocomplete="on">
         <fieldset>
           <legend><b>Kişisel Bilgiler</b></legend>
           <br />
           <label for="name">İsim: </label>
-          <input type="text" id="name" name="name" required /> <br /><br />
+          <input type="text" id="name" name="name" required autofocus /> <br /><br />
           <label for="email">Email:</label>
           <input type="email" name="email" required /><br /><br />
           <label for="tel">Telefon: </label>
           <input type="tel" name="telefon" id="tel" pattern="[0-9]{4} [0-9]{3} [0-9]{3} [0-9]{2}" placeholder="0176 417 680 86"><br><br>
-          <label for="eyalet">Eyalet</label>
-          <select name="eyaletler" id="eyalet">
+          <label for="eyalet">Eyalet: </label>
+          <select name="eyaletler" id="eyalet" size="4">
             <option value="Berlin">Berlin</option>
             <option value="Baden-Württemberg">Baden-Württemberg</option>
             <option value="Bavyera">Bavyera</option>
             <option value="Brandenburg">Brandenburg</option>
             <option value="Bremen">Bremen</option>
             <option value="Hamburg">Hamburg</option>
-            <option value="Hessen">Hessen</option>
+            <option value="Hessen" selected>Hessen</option>
             <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
             <option value="Aşağı Saksonya">Aşağı Saksonya</option>
             <option value="Kuzey Ren-Vestfalya">Kuzey Ren-Vestfalya</option>
@@ -85,7 +85,23 @@
         <label for="mesaj" >Mesajınız:</label><br><br>
           <textarea name="mesaj" id="mesaj" required rows="10" cols="50"></textarea><br><br>
 
+          <h2>Randevu Talebiniz Var Mı?</h2>
+          <p>Tarih ve saat belirlerseniz sizi arayabiliriz.</p>
+          <label for="randevu">Randevu Talebi: </label>
+          <input type="datetime-local" name="randevu" id="randevu" min="2025-07-14"><br><br>
+        <h2>Bizi arkadaşlarınıza tavsiye eder misiniz?</h2>
+        <input list="tavsiye" name="tavsiye">
+        <datalist id="tavsiye">
+            <option value="Evet" >
+            <option value="Olabilir">
+            <option value="Hayır">
+            <option value="Kararsizim">
+            <option value="Kesinliklehayir">
+        </datalist><br><br>
+
+
           <button type="submit">Gönder</button>
+          <button type="reset">Temizle</button>
         
       </form>
     </main>
