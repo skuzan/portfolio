@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Navbar-->
     <nav>
-        <img src="/public/images/logo.png" alt="Logo" title="Logo" width="300">
-        <ul>
-            <li><a href="/">Anasayfa</a></li>
-            <li><a href="/hakkimda.html" title="Hakkımda">Hakkımda</a></li>
-            <li><a href="/projeler.html" title="Projeler">Projeler</a></li>
-            <li><a href="/iletisim.html" title="İletişim">İletişim</a></li>
-        </ul>
-    </nav><hr>
+      <img src="/public/images/logo.png" alt="Logo" title="Logo" width="300" />
+      <ul>
+        <li><a href="/">Anasayfa</a></li>
+        <li><a href="/hakkimda.html" title="Hakkımda">Hakkımda</a></li>
+        <li><a href="/projeler.html" title="Projeler">Projeler</a></li>
+        <li><a href="/iletisim.html" title="İletişim">İletişim</a></li>
+      </ul>
+    </nav>
+    <hr />
     <!--Main Content-->
     <main>
-        <!--Contact Section-->
-        <h2>İletişim Formu</h2>
-        <form action="iletisim formu">
-        <label for="name">İsim:   </label>
-        <input type="text" id="name" name="name"> <br><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email"><br><br>
-        <label for="mesaj">Mesaj:</label><br>
-        <textarea name="mesaj" id="mesaj"></textarea><br><br>
-        <button type="submit">Gönder</button>
-
-        </form>
-    </main><hr>
+      <!--Contact Section-->
+      <h2>İletişim Formu</h2>
+      <form action="/result.html">
+        <fieldset>
+          <legend><b>Kişisel Bilgiler</b></legend>
+          <br />
+          <label for="name">İsim: </label>
+          <input type="text" id="name" name="name" required /> <br /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" required /><br /><br />
+          <label for="tel">Telefon: </label>
+          <input type="tel" name="telefon" id="tel" pattern="[0-9] {4} [0-9]{3} [0-9]{3} [0-9]{2}" placeholder="0176 417 680 86"><br><br>
+          <label for="eyalet">Eyalet</label>
+          <select name="" id="">
+            <option value="Berlin">Berlin</option>
+            <option value="Baden-Württemberg">Baden-Württemberg</option>
+            <option value="Bavyera">Bavyera</option>
+            <option value="Brandenburg">Brandenburg</option>
+            <option value="Bremen">Bremen</option>
+            <option value="Hamburg">Hamburg</option>
+            <option value="Hessen">Hessen</option>
+            <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+            <option value="Aşağı Saksonya">Aşağı Saksonya</option>
+            <option value="Kuzey Ren-Vestfalya">Kuzey Ren-Vestfalya</option>
+            <option value="Renanya-Palatina">Renanya-Palatina</option>
+            <option value="Saarland">Saarland</option>
+            <option value="Saksonya">Saksonya</option>
+            <option value="Saksonya-Anhalt">Saksonya-Anhalt</option>
+            <option value="Berlin">Schleswig-Holstein</option>
+            <option value="Berlin">Berlin</option>
+          </select><br><br>
+          <label for="mesaj" >Mesaj:</label><br />
+          <textarea name="mesaj" id="mesaj" required></textarea><br /><br />
+          <button type="submit">Gönder</button>
+        </fieldset>
+      </form>
+    </main>
+    <hr />
     <!--Footer-->
     <footer>
-        
-        <p>Tüm Hakları Saklıdır. 2025</p>
-    </footer><hr>
-    
-</body>
+      <p>Tüm Hakları Saklıdır. 2025</p>
+    </footer>
+    <hr />
+  </body>
 </html>
