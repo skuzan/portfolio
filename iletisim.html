@@ -21,7 +21,7 @@
     <main>
       <!--Contact Section-->
       <h2>İletişim Formu</h2>
-      <form action="/result.html">
+      <form action="/result.html" method="get">
         <fieldset>
           <legend><b>Kişisel Bilgiler</b></legend>
           <br />
@@ -30,9 +30,9 @@
           <label for="email">Email:</label>
           <input type="email" name="email" required /><br /><br />
           <label for="tel">Telefon: </label>
-          <input type="tel" name="telefon" id="tel" pattern="[0-9] {4} [0-9]{3} [0-9]{3} [0-9]{2}" placeholder="0176 417 680 86"><br><br>
+          <input type="tel" name="telefon" id="tel" pattern="[0-9]{4} [0-9]{3} [0-9]{3} [0-9]{2}" placeholder="0176 417 680 86"><br><br>
           <label for="eyalet">Eyalet</label>
-          <select name="" id="">
+          <select name="eyaletler" id="eyalet">
             <option value="Berlin">Berlin</option>
             <option value="Baden-Württemberg">Baden-Württemberg</option>
             <option value="Bavyera">Bavyera</option>
@@ -49,11 +49,44 @@
             <option value="Saksonya-Anhalt">Saksonya-Anhalt</option>
             <option value="Berlin">Schleswig-Holstein</option>
             <option value="Berlin">Türingen</option>
-          </select><br><br>
-          <label for="mesaj" >Mesaj:</label><br />
-          <textarea name="mesaj" id="mesaj" required></textarea><br /><br />
+          </select><br><br></fieldset><br>
+          <fieldset>
+            <legend><b>Projeniz Hakkında</b></legend><br>
+           <label for="proje" >Projeniz hakkında bilgi veriniz:</label><br><br>
+          <textarea name="proje" id="proje" required rows="10" cols="100"></textarea><br><br>
+          <label for="bastarih">Başlangıç Tarihi: </label>
+          <input type="date" name="tarih" id="bastarih" min="2025-07-10" required><br><br>
+          <label for="bittarih">Bitiş Tarihi: </label>
+          <input type="date" name="tarih" id="bittarih"><br><br>
+          <label for="dosya">Dosya Ekle: </label>
+          <input type="file" name="dosya" id="dosya">
+          </fieldset><br><br>
+          <fieldset><br>
+            <legend><b>Bana nasıl ulaştınız?</b></legend>
+          <input type="radio" name="internet" id="internet">
+          <label for="internet">İnternet</label>
+          <input type="radio" name="arkadas" id="arkadas">
+          <label for="arkadas">Arkadaş</label>
+          <input type="radio" name="brosur" id="brosur">
+          <label for="brosur">Broşür</label>
+          </fieldset><br><br>
+
+        <fieldset>
+            <legend><b>Gelecekte planladığınız başka projeleriniz var mı?</b></legend>
+            <input type="checkbox" name="gelecek-projeler" id="gproje">
+            <label for="gproje">Web Tasarımı</label> 
+             <input type="checkbox" name="gelecek-projeler" id="app">
+            <label for="app">Mobil Uygulama</label>
+             <input type="checkbox" name="gelecek-projeler" id="social">
+            <label for="social">Sosyal Medya Yönetimi</label>
+            <input type="checkbox" name="gelecek-projeler" id="google">
+            <label for="google">Google Ads </label>
+        </fieldset><br>
+        <label for="mesaj" >Mesajınız:</label><br><br>
+          <textarea name="mesaj" id="mesaj" required rows="10" cols="50"></textarea><br><br>
+
           <button type="submit">Gönder</button>
-        </fieldset>
+        
       </form>
     </main>
     <hr />
