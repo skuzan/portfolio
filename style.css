@@ -20,12 +20,13 @@ height: auto;
 .photo{
     border-radius: 20px;
     display: flex;
+    max-height: auto;
+    
 }
 .yatay{
-    max-width: 900px;
+    max-width: 1400px;
     width: 100%;
     padding: 2px;
-    border: 1px solid gray;
     border-radius: 15px;
     display: flex;
 
