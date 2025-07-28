@@ -9,8 +9,9 @@ height: auto;
     line-break: anywhere;
 }
 
-.hakkimda, .projeler, .iletisim{
-    margin-left: 40px;
+ul li{
+    display: inline;
+    padding: 10px;
 }
 
 .navbar{
