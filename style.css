@@ -1,4 +1,52 @@
-#logo {
-width: 100;
+#logo{
+width: 150px;
 height: auto;
+}
+
+.menu{
+    display: flex;
+    font-size: 20px;
+    line-break: anywhere;
+}
+
+.hakkimda, .projeler, .iletisim{
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.photo{
+    border-radius: 20px;
+    display: flex;
+}
+.yatay{
+    max-width: 900px;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+
+}
+
+.sagalan{
+    margin-left: 30px;
+}
+
+#button_iletisim{
+    
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: cadetblue;
+    color: white;
+}
+
+#button_iletisim:hover{
+    background-color: beige;
+    color: black;
+
 }
