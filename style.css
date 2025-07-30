@@ -85,3 +85,18 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
+
+a:link{
+    color:cadetblue
+}
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: cadetblue;
+}
+
+a:active{
+    color: darkcyan;
+}
