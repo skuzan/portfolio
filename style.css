@@ -28,7 +28,11 @@ height: auto;
     line-break: anywhere;
 }
 
-ul li{
+.menu li{
+    display: inline;
+    padding: 10px;
+}
+.footer li{
     display: inline;
     padding: 10px;
 }
