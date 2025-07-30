@@ -3,6 +3,7 @@
     color: rgb(51 65 85 / var(--tw-text-opacity, 1));
     font-family: Poppins;
     font-size: 12px;
+    box-sizing: border-box;
 }
 
 h1{
