@@ -1,83 +1,89 @@
 *{
-        --tw-text-opacity: 1;
-    color: rgb(51 65 85 / var(--tw-text-opacity, 1));
-    font-family: Poppins;
-    font-size: 12px;
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
+    color: #334155
 }
 
-h1{
-    font-size: 20px;
-}
-
-h2{
-    font-size: 16px;
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 5px;
-}
-
+/* Logo ayarlar */
 
 #logo{
-width: 150px;
-height: auto;
+    width: 150px;
+    margin-right: 5px;
+    margin-top: 10px;
 }
 
+/* Menü ayarlar */
+
 .menu{
-    display: flex;
-    font-size: 20px;
-    line-break: anywhere;
+    
+    display: inline
+
 }
 
 .menu li{
     display: inline;
     padding: 10px;
-}
-.footer li{
-    display: inline;
-    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 16px;
 }
 
-.navbar{
-    display: flex;
-}
+/* Resim ve açıklama ayarlar */
 
-.photo{
-    border-radius: 20px;
-    display: flex;
-    max-height: auto;
-    
-}
 .yatay{
     max-width: 1400px;
     width: 100%;
     padding: 2px;
     border-radius: 15px;
     display: flex;
+    margin: 15px;
 
 }
+
+.photo{
+    border-radius: 20px;
+    display: flex;
+    max-height: auto; 
+    margin-top: 20px; 
+}
+
 
 .sagalan{
     margin-left: 30px;
+    margin-top: 30px;
 }
 
-#button_iletisim{
-    
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    color: rgb(0, 0, 0);
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+/* H1,H2,Span ayarlar */
+
+h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-#button_iletisim:hover{
-    background-color: beige;
-    color: black;
+.sinan{
+    background-color: #2f4f4f;
+  text-align: center;
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  margin-right: 5px;
 
 }
+
+h2{
+    font-size: 16px;
+    text-decoration-line: underline;
+    text-decoration-thickne ss: 3px;
+    text-underline-offset: 5px;
+    margin-bottom: 10px;
+}
+
+/* p ayarlar */
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -85,19 +91,100 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    font-size: 12px;
 }
 
-a:link{
-    color:cadetblue
-}
-a:visited{
-    color: black;
+/* Buton ayarlar */
+
+button{
+    width: 30%;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2f4f4f;
+  color: white;
+  transition: all 0.6s;
+  margin-bottom: 20px;
+
 }
 
-a:hover{
-    color: cadetblue;
+button:hover {
+  background-color: #4b7d7d;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
-a:active{
-    color: darkcyan;
+hr{
+    margin-bottom: 20px;
 }
+
+/* Footer ayarlar */
+
+footer li{
+    display: inline;
+    padding: 10px;
+    font-size: 12px;
+    
+}
+.haklar{
+    margin-left: 10px;
+}
+
+/** HAKKIMDA ayarlar */
+
+/* Main ayarlar */
+
+.main-about{
+    margin: 10px;
+}
+
+/* ul,li ayarlar */
+
+
+.about-us{
+    margin: 10px;
+    font-size: 12px;
+}
+
+/** PROJELER ayarlar */
+
+/** İLETİŞİM ayarlar */
+
+.iletisim-formu-main{
+    margin: 20px;
+}
+
+textarea {
+  width: 60%;
+  height: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.input-label{
+    margin-left: 10px;
+}
+
+#dosya{
+    margin-bottom: 20px;
+}
+
+#brosur{
+    margin-bottom: 20px;
+
+}
+#google{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
