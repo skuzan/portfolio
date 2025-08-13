@@ -28,11 +28,12 @@
 }
 
 .menu li{
-    display: inline;
+    display: inline-block;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 16px;
 }
+
 a{
     text-decoration: none;
 }
@@ -43,6 +44,20 @@ li:hover{
 }
 
 /* Resim ve açıklama ayarlar */
+
+.main{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.content{
+    margin:10px;
+    width: 70%;
+}
+
+
 
 .yatay{
     max-width: 1400px;
@@ -171,11 +186,12 @@ footer li{
 }
 
 textarea {
-  width: 60%;
+  width: 90%;
   height: 300px;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  resize: none;
 }
 
 .input-label{
@@ -214,6 +230,21 @@ textarea {
     background-color: #80acac;
 
 }
+
+@media (max-width:767px){
+    .content{
+    width: 90%;
+}
+
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .content{
+    width: 90%;
+}
+
+}
+
 
 
 
